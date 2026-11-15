@@ -26,7 +26,7 @@ Dit document beschrijft **wat** het systeem moet doen.
 
 - **E10** Voornemens staan in `intentions/`: `daily/` voor dagelijkse voornemens (inclusief de 's avonds geparkeerde punten), `weekly/` voor wekelijkse voornemens (inclusief afsprakenpakketten) en `backlog/` voor alles wat nog geen dag heeft.
 - **E11** Een backlog-item komt niet vanzelf op een dag te staan; ik bepaal zelf wanneer het naar de dagelijkse of wekelijkse voornemens gaat.
-- **E12** Een afsprakenpakket is een weekset van ongeveer 3 tot 6 afspraken voor het dagelijks leven, die voortbouwt op die van de vorige week. Per dag kan ik afvinken welke afspraken ik ben nagekomen.
+- **E12** Een afsprakenpakket is een weekset van ongeveer 3 tot 6 afspraken voor het dagelijks leven, die voortbouwt op die van de vorige week. Per dag kan ik afvinken welke afspraken ik ben nagekomen, via een capture of een kort bericht. Een pakket staat in `intentions/weekly/ap-YYYYMMDD.md`, en elke afvinking is daar één regel met de operationele dag, de afspraak en de capture.
 
 ### Operationele dag en dagwissel
 

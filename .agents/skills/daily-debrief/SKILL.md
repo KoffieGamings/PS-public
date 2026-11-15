@@ -47,6 +47,7 @@ The agent uses:
 - **User input:** Corrections, missing information and additional context provided during the daily debrief.
 - **Relevant system context:** Information required to understand the day's captures.
 - **Report template:** `/templates/debrief-template.md`.
+- **Agreement package:** The active package in `/intentions/weekly/`, to show which agreements were ticked off during the current operational day. Read only; ticking is the job of the `agreement-packages` skill.
 
 The **operational day ID** is the start of the current operational day as `YYYY-MM-DD_HHMM`, for example `2026-11-15_0530`.
 
@@ -105,6 +106,8 @@ The report is only created after the user has explicitly confirmed the completed
 Present a chronological overview of the day's recorded activities and achievements.
 
 Use a clear **Done** section (`## Gedaan` in the report) to show what the user has accomplished or recorded during the day.
+
+If an agreement package is active, also show which of its agreements were ticked off during this operational day.
 
 Keep the overview concise and easy to review.
 

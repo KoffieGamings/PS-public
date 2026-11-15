@@ -123,3 +123,4 @@ Save every approved capture directly in this directory. Do not choose another de
 - If linking in the MoC fails, retry it the same way as saving, and report clearly if it still fails.
 - If file creation fails, retry saving the approved note. Never discard the approved content. If saving still fails, report the failure clearly and keep the approved note available so nothing is lost.
 - Do not claim that a capture was saved unless the repository confirms successful file creation.
+- If the saved capture says the user kept one of their agreements, the `agreement-packages` skill can tick it off. Ticking is not part of this skill.

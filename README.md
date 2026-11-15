@@ -19,7 +19,7 @@ Dit systeem moet het volgende aan de gebruiker bieden:
 
 
 ## Core Features
-Dit zijn de features van het systeem. Captures, de Chain of Events, de debrief en de briefing zijn gebouwd. De Journal of Progression en het afvinken van afsprakenpakketten zijn nog niet gebouwd. De volledige eisen staan in `REQUIREMENTS.md`.
+Dit zijn de features van het systeem. Elke feature is een losse skill. Een overzicht van alle skills en hoe ze samenwerken staat in `.agents/skills/README.md`. De volledige eisen staan in `REQUIREMENTS.md`.
 
 
 ### Captures
@@ -29,7 +29,7 @@ Makkelijke manier om via een kort berichtje of voicememo een notitie vast te leg
 Chronologische ketting van kalenderdagen (MoC's) met de ruwe captures van elke dag. Elke MoC linkt terug naar de vorige dag.
 
 ### Afsprakenpakketten
-Periodiek "need-to-address-taken" kunnen afspreken die gedurende de dagen terugkeren tot het einde van de vooraf bepaalde periode. Tijdens de periode wordt er bijgehouden (afgevinkt) aan welke taken voldaan worden. Ze staan in `intentions/weekly/`.
+Periodiek "need-to-address-taken" kunnen afspreken die gedurende de dagen terugkeren tot het einde van de vooraf bepaalde periode. Tijdens de periode wordt er bijgehouden (afgevinkt) aan welke taken voldaan worden. Ze staan in `intentions/weekly/`. Afvinken gaat via een capture of een kort bericht.
 
 Voorbeeld: elke week een vast afsprakenpakket van 3 tot 6 afspraken die je in je dagelijks leven wilt inbouwen, zoals een vaste tijd om naar bed te gaan, een vast moment om te stoppen met werken of een korte dagelijkse gewoonte.
 
@@ -40,4 +40,4 @@ Voorbeeld: elke week een vast afsprakenpakket van 3 tot 6 afspraken die je in je
 's Ochtends een overzicht van wat je je voor die dag hebt voorgenomen: de geparkeerde punten van gisteravond en je afsprakenpakketten. De briefing legt ook het wisselmoment van de operationele dag vast in `changeover-log.md`.
 
 ### Journal of Progression
-Chronologische ketting van operationele dagen (MoC's) en daaraan hangende notities; dagboekvorm; "wat is er gelukt en wat niet? en waarom?"; persoonlijke inzichten en beslissingen. Dit is een aparte laag bovenop de Chain of Events.
+Chronologische ketting van operationele dagen (MoC's) en daaraan hangende notities; dagboekvorm; "wat is er gelukt en wat niet? en waarom?"; persoonlijke inzichten en beslissingen. Dit is een aparte laag bovenop de Chain of Events. Zodra een operationele dag voorbij is, wordt hij afgesloten: de captures van die dag worden naar de journal gekopieerd en de dag krijgt een eigen MoC.
