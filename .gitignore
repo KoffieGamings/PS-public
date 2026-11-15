@@ -1,0 +1,40 @@
+
+# Obsidian: lokale instellingen en werkruimte
+.obsidian/
+
+# VSCode: lokale instellingen en werkruimte
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+.directory
+.trash-*/
+.nfs*
+.fuse_hidden*
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Private keys and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# Logs
+*.log
+
+# Tijdelijke bestanden
+*.tmp
+*.temp
+*.swp
+*~
