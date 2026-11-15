@@ -6,6 +6,7 @@ A skill is one folder with one `SKILL.md`: plain-language instructions that tell
 
 | Skill | Job | When it runs | Writes to |
 | --- | --- | --- | --- |
+| `setup` | Set up the system the first time: settings, folders, skills, updates, schedule | Once, when `/config.md` is missing | `/config.md` |
 | `captures` | Save one note and link it in the calendar-day MoC | Whenever you capture something | `/chain-of-events/` |
 | `daily-briefing` | Start the day: summary of yesterday, plans for today, log the changeover | Every morning | `/reports/daily/daily-briefing/`, `/changeover-log.md` |
 | `daily-debrief` | End the day: review what you did, park things for tomorrow or later | Every evening | `/reports/daily/daily-debrief/`, `/intentions/daily/`, `/intentions/backlog/` |
@@ -20,6 +21,8 @@ Each skill writes only to its own places. That is what keeps them independent: y
 2. **After the briefing: `journal-closing`.** The day that just ended is copied into the journal.
 3. **During the day: `captures`.** Every note lands in the Chain of Events. If a note says you kept an agreement, `agreement-packages` ticks it off.
 4. **Evening: `daily-debrief`.** You look back, and park what is on your mind for tomorrow or for later.
+
+The agent's role and general rules are in `/AGENTS.md`. Claude reads them through `/CLAUDE.md`, which points to the same file.
 
 ## How the skills fit together
 

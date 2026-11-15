@@ -1,5 +1,7 @@
 # Persoonlijk Progressiesysteem
 
+**Aan de slag:** maak een eigen privé-kopie van deze repo en open die met je AI-agent. De agent leest zijn rol in `AGENTS.md` (Claude via `CLAUDE.md`) en begint bij de eerste keer automatisch met de installatie-skill `setup`.
+
 
 ## Product core requirements
 

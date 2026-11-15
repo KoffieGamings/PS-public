@@ -56,6 +56,11 @@ Een MoC (map of content) is een overzichtsnotitie die vooral verwijst naar ander
 
 - **E26** Een openstaande beslissing kan ik op elk moment vastleggen met een capture, of parkeren in de avondreflectie (voor morgen of in de backlog). Zo is hij uit mijn hoofd en weet ik dat hij bewaard is.
 
+### Installatie en rol van de agent
+
+- **E27** De agent vindt zijn rol en algemene regels in `AGENTS.md`. Voor Claude verwijst `CLAUDE.md` naar hetzelfde bestand, zodat er maar één versie is.
+- **E28** Bij het eerste gebruik (als `config.md` ontbreekt) begeleidt de skill `setup` de gebruiker stap voor stap: instellingen, mappen, skills beschikbaar maken voor de agent, de `upstream` voor updates en de geplande briefing en debrief. Dit moet te volgen zijn voor iemand die nieuw is in tech en AI.
+
 ## Mapstructuur
 
 ```
@@ -69,7 +74,10 @@ reports/daily/
   daily-briefing/         briefingrapporten (dbf-...) en infographics
   daily-debrief/          debriefrapporten (ddb-...)
 changeover-log.md         één regel per bevestigde briefing
-config.md                 onder meer language en fallback_changeover_time
+config.md                 onder meer language en fallback_changeover_time (alleen in je eigen repo)
+config.example.md         voorbeeld voor config.md
+AGENTS.md                 rol en regels voor de agent
+CLAUDE.md                 verwijst naar AGENTS.md
 ```
 
 ## Buiten scope voor nu
